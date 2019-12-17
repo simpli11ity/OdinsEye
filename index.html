@@ -1,0 +1,45 @@
+<html>
+<style>
+  #contrain {
+    height: 100%;
+    width: 50%;
+    background-color: powderblue;
+    float:left;
+    overflow:hidden;
+  }
+
+  img {
+    height: 85%;
+    width: 100%;
+  }
+
+  #stat {
+    height:100%;
+    width:50%;
+  }
+  .vl {
+  border-left: 6px solid black;
+  height: 100%;
+}
+
+
+</style>
+  <head>
+    <title>Prototype</title>
+  </head>
+  <body>
+    <div id="contrain"> 
+      <h1 style = "text-align: center; width:100%; position:center;">Live Camera Feed</h1>
+      <img src="{{ url_for('output') }}">
+    </div>
+
+    <div id="contrain"> 
+      <div style="float:left;" class="vl"></div>
+      <h1 style = "text-align: center; width:100%; position:center;">Statistics</h1>
+      <div id="stat">
+      
+      </div>
+    </div>
+
+  </body>
+</html>
